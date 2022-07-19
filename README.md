@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+![Github_README](https://user-images.githubusercontent.com/73635827/179317988-86d25a63-293f-4c55-8202-eb913a51d452.png)
+<h1></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h5 align="center">React / Javascript / HTML / CSS / REST API</h5>
+<h1 align="center">Spotify Aura<br>
+  <a href="http://www.arianadaris.com/work" target="_blank"><img src="https://img.shields.io/badge/Read About Project-informational?style=flat&logo=java&logoColor=white&color=62BDA8" /></a>
+  <a href="https://www.figma.com/file/RHF45LvaJhiOT7nftlNYB3/Spotify-Aura?node-id=0%3A1" target="_blank"><img src="https://img.shields.io/badge/View Prototype-informational?style=flat&logo=java&logoColor=white&color=62BDA8" /></a>
+  <a href="https://dribbble.com/shots/18786341-Spotify-Aura" target="_blank"><img src="https://img.shields.io/badge/View Dribbble-informational?style=flat&logo=java&logoColor=white&color=62BDA8" /></a>
+</h1>
 
-## Available Scripts
+<h3>A Spotify-inspired website that shows what your current moods are based on your recent listening.</h3>
 
-In the project directory, you can run:
+<h4>Overview</h4>
+<p>This project allowed me to work with Spotify's Web API to generate colors based off of a user's recently played tracks to create an audio aura. I gained experience with user authentication practices and data processing.</p>
 
-### `npm start`
+<p>Please note that this project was heavily inspired by Spotify and the 2021 Wrapped Audio Aura feature. I take no credit for the concept.</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h4>Impact</h4>
+  • Show users how their recent listening reflects their moods in an engaging way<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h4>Features</h4>
+  • Populates data using <a href="https://developer.spotify.com/documentation/web-api/">Spotify's Web API</a><br>
+  • Allows users to view an animated gradient of colors based on their recent moods as reflected through their recently played songs<br>
+  • Includes a "Share Aura" feature that lets users share a snapshot of their aura<br>
+  • Show users their current top 20 tracks (most listened to)<br>
+<h1></h1>
 
-### `npm test`
+<h4>Project Images</h4>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Github_ProjectImage](https://user-images.githubusercontent.com/73635827/179318532-6c7ae8e8-e6b5-4a85-bc7f-dfea181ff8db.png)
 
-### `npm run build`
+<h1></h1>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h4>Installation & Set Up</h4>
+1. Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Start the development server
 
-### `npm run eject`
+```sh
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h4>Building & Running for Production</h4>
+1. Generate a full static production build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm build serve
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Preview the site as it will appear once deployed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+npm build serve
+```
