@@ -1,0 +1,110 @@
+{
+    "angry": {
+        "valence": 0.488324074,
+        "energy": 0.843388889,
+        "instrumental": 0.041072586,
+        "danceability": 0.474277778,
+        "acousticness": 0.023986966,
+        "colors": [
+            "#FFD4C2",
+            "#FF7439",
+            "#D64000",
+            "#872800"
+        ],
+        "descriptors": [
+            "bold",
+            "loud",
+            "heated"
+        ]
+    },
+    "happy": {
+        "valence": 0.639533333,
+        "energy": 0.64276,
+        "instrumental": 0.040580647,
+        "danceability": 0.625733333,
+        "acousticness": 0.215161951,
+        "colors": [
+            "#E2DAEB",
+            "#C4B1D3",
+            "#8E65A9",
+            "#503659"
+        ],
+        "descriptors": [
+            "blissful",
+            "cheerful",
+            "ecstatic"
+        ]
+    },
+    "calm": {
+        "valence": 0.390982759,
+        "energy": 0.498608621,
+        "instrumental": 0.065428301,
+        "danceability": 0.598377586,
+        "acousticness": 0.420746552,
+        "colors": [
+            "#C9E3DB",
+            "#96F0B7",
+            "#08856A",
+            "#294F45"
+        ],
+        "descriptors": [
+            "chill",
+            "relaxed",
+            "cozy"
+        ]
+    },
+    "energetic": {
+        "valence": 0.593275926,
+        "energy": 0.787685185,
+        "instrumental": 0.001466367,
+        "danceability": 0.668694444,
+        "acousticness": 0.072690326,
+        "colors": [
+            "#D7E3B4",
+            "#CEF56A",
+            "#5F8007",
+            "#3B4F06"
+        ],
+        "descriptors": [
+            "confident",
+            "focused",
+            "hype"
+        ]
+    },
+    "sad": {
+        "valence": 0.275424359,
+        "energy": 0.365365385,
+        "instrumental": 0.011113382,
+        "danceability": 0.530397436,
+        "acousticness": 0.670179487,
+        "colors": [
+            "#C9E0FC",
+            "#59A0F6",
+            "#0D72EA",
+            "#074791"
+        ],
+        "descriptors": [
+            "wistful",
+            "somber",
+            "angst"
+        ]
+    },
+    "hopeful": {
+        "valence": 0.470933566,
+        "energy": 0.55475035,
+        "instrumental": 0.060884989,
+        "danceability": 0.580265734,
+        "acousticness": 0.370355,
+        "colors": [
+            "#FCD2EB",
+            "#F36EBE",
+            "#DF108B",
+            "#8D0C58"
+        ],
+        "descriptors": [
+            "affectionate",
+            "nostalgic",
+            "yearnful"
+        ]
+    }
+}
