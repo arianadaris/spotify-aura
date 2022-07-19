@@ -1,0 +1,145 @@
+.container
+{
+    color: white;
+    background: #121212;
+    height: 100vh;
+    width: 100%;
+}
+
+.content
+{
+    padding: 2rem 4rem;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows .iconify
+{
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 0.75rem 0.75rem;
+    height: 2rem;
+}
+
+.arrows .iconify:hover
+{
+    cursor: pointer;
+}
+
+#right
+{
+    color: #B7B7B7;
+}
+
+#right:hover
+{
+    cursor: not-allowed;
+}
+
+.accountIcons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logout
+{
+    position: absolute;
+    background-color: #333333;
+    right: 0;
+    border-radius: 10px;
+    top: 4rem;
+    z-index: 2;
+    width: 10rem;
+    border: none;
+}
+
+.logout h2
+{
+    width: 78.5%;
+    color: white;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+.logout h2:hover
+{
+    background-color: #565656;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.accountIcons .iconify:hover
+{
+    cursor: pointer;
+}
+
+.imageWrapper img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.iconify
+{
+    height: 35px;
+    width: 35px;
+    margin-left: 1rem;
+    color: white;
+}
+
+.hide
+{
+    display: none;
+}
+
+.tracks
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 12.375rem);
+    grid-template-rows:auto;
+    grid-gap: 1rem;
+    height: fit-content;
+    overflow-y: scroll;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+.card img
+{
+    width: 85%;
+    height: 85%;
+    margin: 0.75rem auto;
+    border-radius: 5px;
+}
+
+.cardTitle
+{
+    font-size: 1rem;
+    color: white;
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+.cardArtist
+{
+    color: #B7B7B7;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 0;
+    margin: 1.25rem 1rem;
+}
