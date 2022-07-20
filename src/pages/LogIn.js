@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import MediaQuery from 'react-responsive';
 
 import styles from './LogIn.module.css';
 
@@ -63,29 +64,57 @@ function LogIn()
         }
     }, []);
 
-    if(!token)
+    if(sessionStorage.getItem("token") === null)
     {
         return (
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className={styles.container}>
-                <div className={styles.left}>
-                    <div className={styles.title}>
-                        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify Logo" />
-                        <h1>Aura</h1>
+                <MediaQuery minWidth={1008}>
+                    <div className={styles.left}>
+                        <div className={styles.title}>
+                            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify Logo" />
+                            <h1>Aura</h1>
+                        </div>
+                        <p>Generate an aura based on your recent listening to learn more about your current mood.</p>
+                        <button onClick={handleClick}>Connect Spotify</button>
                     </div>
-                    <p>Generate an aura based on your recent listening to learn more about your current mood.</p>
-                    <button onClick={handleClick}>Connect Spotify</button>
-                </div>
-                <div className={styles.right}>
-                    <div className={styles.row} id={styles.row1}>
-                        {rows.slice(0,3)}
+                    <div className={styles.right}>
+                        <div className={styles.row} id={styles.row1}>
+                            {rows.slice(0,3)}
+                        </div>
+                        <div className={styles.row} id={styles.row2}>
+                            {rows.slice(3,6)}
+                        </div>
+                        <div className={styles.row} id={styles.row3}>
+                            {rows.slice(6,9)}
+                        </div>
                     </div>
-                    <div className={styles.row} id={styles.row2}>
-                        {rows.slice(3,6)}
+                </MediaQuery>
+                <MediaQuery minWidth={898} maxWidth={1007}>
+                    <h1>Tablet</h1>
+                </MediaQuery>
+                <MediaQuery maxWidth={897}>
+                    <div className={styles.mobile}>
+                        <div className={styles.background}>
+                            <div className={styles.row} id={styles.row1}>
+                                {rows.slice(0,4)}
+                            </div>
+                            <div className={styles.row} id={styles.row2}>
+                                {rows.slice(4,8)}
+                            </div>
+                            <div className={styles.row} id={styles.row3}>
+                                {rows.slice(6,10)}
+                            </div>
+                        </div>
+                        <div className={styles.content}>
+                            <div className={styles.title}>
+                                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify Logo" />
+                                <h1>Aura</h1>
+                            </div>
+                            <p>Generate an aura based on your recent listening to learn more about your current mood.</p>
+                            <button onClick={handleClick}>Connect Spotify</button>
+                        </div>
                     </div>
-                    <div className={styles.row} id={styles.row3}>
-                        {rows.slice(6,9)}
-                    </div>
-                </div>
+                </MediaQuery>
             </motion.div>
         );
     }
@@ -93,7 +122,7 @@ function LogIn()
     {
         return(
             <Navigate to="/home" state={{token: token}} />
-        )
+        );
     }
 }
 

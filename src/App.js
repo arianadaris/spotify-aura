@@ -14,6 +14,7 @@ function App() {
           <Route exact path="/" element={<LogIn />} />
           <Route exact path="/tracks/:id" element={<UserTracks />} />
           <Route exact path="/home" element={<Home />} />
+          <Route path="*" element={<LogIn />} />
         </Routes>
       </AnimatePresence>
     </div>

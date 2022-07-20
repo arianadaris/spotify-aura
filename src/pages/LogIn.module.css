@@ -53,7 +53,7 @@
     margin-top: 1rem;
 }
 
-.left button
+.left button, .content button
 {
     font-weight: bold;
     font-size: 1.25rem;
@@ -143,5 +143,66 @@
     {
         transform: translateX(0px);
     }
+}
 
+.mobile
+{
+    position: relative;
+    width: 100vw;
+}
+
+.mobile .background
+{
+    transform: translateX(-50px);
+}
+
+.mobile .content
+{
+    background: linear-gradient(#222222, #121212);
+    box-shadow: -4px 0px 100px 20px #121212;
+    border-radius: 10px;
+    width: 101%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.content .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.content .title img
+{
+    height: 3rem;
+}
+
+.content .title h1
+{
+    color: white;
+    font-size: 1.9rem;
+}
+
+.content p
+{
+    font-size: 1.65rem;
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.content button
+{
+    margin-top: 4rem;
+    font-size: 1.45rem;
 }
