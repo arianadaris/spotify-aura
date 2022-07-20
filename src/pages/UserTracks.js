@@ -96,7 +96,7 @@ function UserTracks()
                             <div onClick={toggleLogout}>
                                 <span className={`${styles.iconify} ${"iconify"}`} id="logoutArrow" data-icon="dashicons:arrow-down-alt2"></span>
                             </div>
-                            <button className={`${styles.logout} ${styles.hide}`} id="logout">
+                            <button className={`${styles.logout} ${styles.hide}`} id="logout" onClick={() => sessionStorage.removeItem("token")}>
                                 <a href="/"><h2>Log out</h2></a>
                             </button>
                         </div>
