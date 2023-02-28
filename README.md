@@ -7,7 +7,7 @@
   <a href="https://www.figma.com/file/RHF45LvaJhiOT7nftlNYB3/Spotify-Aura?node-id=0%3A1" target="_blank"><img src="https://img.shields.io/badge/View Prototype-informational?style=flat&logo=java&logoColor=white&color=62BDA8" /></a>
   <a href="https://dribbble.com/shots/18786341-Spotify-Aura" target="_blank"><img src="https://img.shields.io/badge/View Dribbble-informational?style=flat&logo=java&logoColor=white&color=62BDA8" /></a>
 </h1>
-
+<h6>Note: This project is complete but has not been launched due to being in the process of retrieving the Spotify API extension which would allow all users to interact with this website (currently only devs are allowed!).</h6>
 <h3>A Spotify-inspired website that shows what your current moods are based on your recent listening.</h3>
 
 <h4>Overview</h4>
